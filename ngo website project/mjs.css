@@ -1,0 +1,525 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: rgb(4, 10, 0);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: aliceblue;
+    font-family: "Playwrite AT", cursive;
+    font-size: 1.5em;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.scroll h1 {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
+    
+}
+
+.scroll a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.5s;
+}
+
+.scroll a:hover {
+    color: black;
+    background-color: white;
+}
+
+#bask {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.info {
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info h1 {
+    font-size: 5em;
+    font-weight: 900;
+    text-shadow: black 10px -2px 12px;
+}
+
+.info i {
+    color: rgb(199, 12, 12);
+    -webkit-text-stroke: 0.2px rgb(211, 36, 36);
+}
+
+.info h2 {
+    font-size: 2em;
+    font-weight: 900;
+    text-shadow: black 10px -2px 12px;
+    
+}
+
+.info b {
+    color: rgba(28, 197, 64, 0.953);
+    font-weight: 900;
+}
+
+.cards{
+ 
+    padding-top: 30vh;
+    display: flex;
+    color: white;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    text-align: center;
+
+    
+}
+
+.cards h1{
+padding: 10px;
+text-transform: uppercase;
+font-family: "Bebas Neue", sans-serif;
+font-size: 2em;
+font-weight: 900;
+font-style: normal;
+}
+
+#hhq{
+    margin-top: 300px;
+color: white;
+position: relative;
+text-align: center;
+font-family: "Bebas Neue", sans-serif;
+font-size: 10em;
+font-weight: 900;
+font-style: normal;
+text-shadow: black 10px -2px 12px;
+}
+
+.cards img{
+    height: 325px;
+    width: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+   margin: 30px;
+
+}
+
+.card{
+    background-color: black;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+
+}
+
+
+.T-shirts:hover{
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+border: 3px solid white;
+opacity: 0.9 ;
+}
+
+.lowers:hover{
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+border: 3px solid white;
+opacity: 0.9 ;
+}
+
+.shoes:hover{
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+border: 3px solid white;
+opacity: 0.9 ;
+}
+
+#kls{
+    color: white;
+    position: relative;
+    text-shadow: black 10px -2px 12px;
+    /* width:100%; */
+    font-size:5em;
+    text-wrap: nowrap;
+    /* background-color: red; */
+    animation: RighttoLeft 5s infinite linear;
+}
+
+#scroll-text{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    background-color: gray;
+    position: relative;;
+    z-index: 999;
+}
+
+@keyframes RighttoLeft {
+    0%{
+        transform: translateX(80%);
+    }
+    100%{
+        transform: translateX(-80%);
+    }
+}
+
+.womcard{
+    padding-top: 30vh;
+    display: flex;
+    color: white;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    text-align: center;
+}
+
+.womcard h1{
+    padding: 10px;
+text-transform: uppercase;
+font-family: "Bebas Neue", sans-serif;
+font-size: 2em;
+font-weight: 900;
+font-style: normal;
+}
+
+#grls{
+    margin-top: 300px;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10em;
+    font-weight: 900;
+    font-style: normal;
+    text-shadow: black 10px -2px 12px;
+}
+
+.womcard img{
+    height: 325px;
+    width: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+   margin: 30px;
+}
+
+.wom{
+    background-color: black;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+}
+
+.Tshirts:hover{
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+border: 3px solid white;
+opacity: 0.9 ;
+}
+
+.Lowers:hover{
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+border: 3px solid white;
+opacity: 0.9 ;
+}
+
+.Shoes:hover{
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+border: 3px solid white;
+opacity: 0.9 ;
+}
+
+#special{
+    margin-top: 100px;
+    color: white;
+    position: relative;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 7em;
+font-weight: 900;
+font-style: normal;
+text-shadow: black 10px -2px 12px;
+text-align: center;
+margin-bottom: 100px;
+}
+
+.div{
+    position: relative;
+    color:white;
+height: 100%;
+width: 100%;
+display: flex;
+
+
+}
+
+.div img{
+    height: 100%;
+    width: 35vw;
+ border-top-left-radius: 20px;   
+ border-top-right-radius: 20px;
+}
+
+.jersey h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    background-color: rgb(13, 93, 96);
+    text-align: center;
+    width: 99%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.jersey{
+    height: 70%;
+    width: 40%;
+    margin: 5vmin;
+    
+
+    
+}
+
+.jersey img{
+    object-fit: cover;
+}
+
+#common:hover{
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+    
+}
+
+.combo{
+    height: 70%;
+    width: 40%;
+    margin: 5vmin;
+}
+
+.combo h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    background-color: rgb(13, 93, 96);
+    text-align: center;
+    width: 99%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.combo img{
+    object-fit: cover;
+}
+
+#combojer:hover{
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+}
+
+.classico{
+    height: 70%;
+    width: 40%;
+    margin: 5vmin;
+   
+}
+
+.classico img{
+    object-fit: cover;
+}
+
+.classico h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    background-color: rgb(13, 93, 96);
+    text-align: center;
+    width: 99%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.classico:hover{
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white,
+    0px 0px 10px white;
+}
+
+
+
+#feat{
+    position: relative;
+    color:white;
+text-align: center;
+margin-top: 300px;
+font-family: "Bebas Neue", sans-serif;
+font-size: 4em;
+font-weight: 900;
+
+}
+
+
+.feature {
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    padding: 20px; 
+}
+
+.feature-text {
+    max-width: 50%; 
+    padding-left: 20px; 
+}
+.feature video {
+    height: 60vh;
+    width: 40%;
+    border-radius: 10px;
+   
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 60%;
+}
+
+.text-content h1 {
+    color: rgb(252, 6, 6);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    text-shadow: black 10px -2px 12px;
+    margin-bottom: 20px;
+}
+
+.text-content h2 {
+    color: white;
+    text-align: start;
+    white-space: pre-wrap;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.footer {
+    background: linear-gradient(135deg, #4b134f 0%, #c94b4b 100%);
+
+
+
+    text-align: center;
+    padding: 1em 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1em;
+    color: black;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.footer a {
+    margin: 0 10px; 
+    color: black; 
+    font-size: 1.7em; 
+}
+
+.footer hr {
+    border-color: aliceblue;
+    width: 80%;
+    margin: 1em auto; 
+}
+
+.footer h1 {
+    margin-top: 1em; 
+}
+
+#insta:hover{
+    color: orangered;
+    transition: 0.5s;
+}
+
+#faceb:hover{
+    color: rgb(6, 6, 190);
+    transition: 0.5s;
+}
+
+#yout:hover{
+    color: red;
+    transition: 0.5s;
+}
